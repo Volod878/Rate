@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="#D3D3D3"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#708090"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+        <TextView
+            android:id="@+id/use_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:textSize="26sp"/>
+        <EditText
+            android:id="@+id/use_number_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:hint="@string/_0_00"
+            android:imeOptions="actionGo"
+            android:textColor="@color/black"
+            android:background="#FFF5EE"
+            android:layout_margin="10dp"
+            android:textSize="26sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8B4513"
+        android:onClick="convertTo"
+        android:padding="16dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:textSize="20sp"
+        android:text="@string/convert"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#708090"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+        <TextView
+            android:id="@+id/convert_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:textSize="26sp"/>
+        <TextView
+            android:id="@+id/convert_number_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#FFF5EE"
+            android:layout_margin="10dp"
+            android:textSize="26sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="6dp"
+        android:backgroundTint="#8B4513"
+        android:onClick="updateRate"
+        android:padding="16dp"
+        android:text="@string/update"
+        android:textSize="20sp" />
+</LinearLayout>
